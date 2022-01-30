@@ -7,6 +7,11 @@
     <title>Interfaces PHP</title>
 </head>
 <body>
-    
+    <?php
+    include './php/Ornithorynque.php';
+    $toto = new Ornithorynque();
+    echo $toto->manger(5);
+    $toto->faireDesBulles();
+    ?>
 </body>
 </html>
