@@ -3,10 +3,20 @@
 abstract class Animaux
 {
 
-    protected string $nom;
+    private string $nom;
 
     abstract function manger(int $nbreRepas): string;
     abstract function dormir(): void;
+
+    public function __construct(string $n)
+    {
+        $this->nom = $n;
+    }
+
+    public function getNom() : string
+    {
+        return $this->nom;
+    }
 }
 
 interface Terrestres

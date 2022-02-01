@@ -5,6 +5,11 @@ include './php/Animaux.php';
 class Ornithorynque extends Animaux implements Terrestres, Aquatiques
 {
 
+    public function getNom(): string
+    {
+        return parent::getNom();
+    }
+
     public function manger(int $nbreRepas): string
     {
         return "des trucs " . $nbreRepas . " fois par jour<br>";
