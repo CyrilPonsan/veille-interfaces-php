@@ -7,6 +7,8 @@
     <title>Interfaces PHP</title>
 </head>
 <body>
-    
+    <?php
+    include './php/Animaux.classe.php';
+    ?>
 </body>
 </html>
